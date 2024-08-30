@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import CadastroProduto from './Componentes/CadastroProduto';
 import ListaProdutos from './Componentes/ListaProduto';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -24,6 +25,7 @@ function App() {
     <div>
       <h1>Lista Produtos</h1>
       <ListaProdutos produtos={produtos}/>
+      <CadastroProduto carregaProdutos={carregaProdutos}/>
     </div>
   );
 }
