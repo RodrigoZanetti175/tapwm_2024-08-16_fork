@@ -1,9 +1,9 @@
 import Produto from '../Produto/index.js';
 
-const ListaProdutos = ({ produtos }) => {
+const ListaProdutos = ({ produtos, carregaProdutos }) => {
     return(
         <div> {produtos.map(
-             (p)=> (<Produto valor={p} ></Produto>) 
+             (p)=> (<Produto valor={p} carregaProdutos={carregaProdutos} ></Produto>) 
         )} 
     </div>
     );
